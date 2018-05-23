@@ -97,7 +97,7 @@ namespace vpsk {
         template<typename Function>
         void ApplyToEach(Function func) const {
             std::for_each(entityView.cbegin(), entityView.cend(), [&func, this](const auto& ent) {
-                func(ent, std::get<pool_type<Components>&>(pools).get(ent)...);
+                func(ent, std::get<pool_type<Components>&>(componentPools).get(ent)...);
             });
         }
 
