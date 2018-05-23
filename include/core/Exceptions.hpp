@@ -1,7 +1,6 @@
 #pragma once
 #ifndef VPSK_ENTITY_SYSTEM_EXCEPTIONS_HPP
 #define VPSK_ENTITY_SYSTEM_EXCEPTIONS_HPP
-#include "CommonDef.hpp"
 #include <stdexcept>
 
 namespace vpsk {

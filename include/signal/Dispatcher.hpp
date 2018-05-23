@@ -7,7 +7,7 @@
 #include <utility>
 #include <algorithm>
 #include "Signal.hpp"
-#include "ecs/core/Family.hpp"
+#include "../core/Family.hpp"
 
 namespace vpsk {
 

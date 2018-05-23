@@ -1,15 +1,14 @@
 #pragma once
 #ifndef VPSK_REGISTRY_HPP
 #define VPSK_REGISTRY_HPP
-#include "CommonDef.hpp"
 #include "Exceptions.hpp"
 #include "EntityTraits.hpp"
 #include "Identifiers.hpp"
 #include "ComponentViews.hpp"
 #include "Family.hpp"
 #include "Identifiers.hpp"
-#include "ecs/storage/SparseSet.hpp"
-#include "ecs/signal/Signal.hpp"
+#include "../storage/SparseSet.hpp"
+#include "../signal/Signal.hpp"
 
 namespace vpsk {
 
