@@ -199,7 +199,7 @@ namespace vpsk {
         };
 
         MultiComponentView(pool_type<ComponentTypes>&... _pools) noexcept : pools{ _pools... }, view{ nullptr }, unchecked{}, idx{} {
-
+            Reset();
         }
 
         template<typename Component, typename Other, typename Iter>
@@ -318,7 +318,7 @@ namespace vpsk {
         void Reset() {
             using accum_type = size_t[];
             size_type sz = std::max({ std::get<pool_type<ComponentTypes>&>(pools).size()... }) + std::size_t(1);
-            size_type next;
+            size_type next{};
 
             auto probe = [this](size_type sz, const auto& pool) {
                 return pool.size() < sz ? (view = &pool, pool.size()) : sz;
